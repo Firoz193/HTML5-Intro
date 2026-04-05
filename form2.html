@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Test Form</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admission Test Form</h1>    
+    </header>
+    <main>
+        <section>
+            <h2>Please fill up the form.</h2>
+            <form>
+                <label for="Name">Your Name:
+                    <input id="Name" type="text" name="name" placeholder="Enter your name">
+                </label>
+                <label for="Email">Your Email:
+                    <input id="Email" type="email" name="email" placeholder="Enter your email">
+                </label>
+                <label for="phone">Your Phone:
+                    <input id="phone" type="tel" name="phone" placeholder="Enter your phone number">
+                </label>
+
+                <fieldset>
+                    <legend>Pick Your Current Semester</legend>
+                    <label for="1st">
+                        <input type="radio" id="1st" name="semester" value="1st">
+                        1st Semester
+                    </label>
+                    <label for="2nd">
+                        <input type="radio" id="2nd" name="semester" value="2nd">
+                        2nd Semester
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label for="comments">Comments:
+                        <textarea id="comments" name="comments" placeholder="Enter any additional information"></textarea>
+                    </label>
+                </fieldset>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
